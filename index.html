@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Webster — Coming Soon</title>
+<meta name="description" content="The Webster is bringing web design & digital services to the US, UK, Canada, Australia and New Zealand. thewebster.net launches soon.">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="orbit" aria-hidden="true"></div>
+
+  <main class="stage">
+    <div class="mark">
+      <img src="assets/logo.webp" alt="The Webster — Web Design & Digital Services" width="180" height="180">
+    </div>
+
+    <p class="eyebrow">The Webster &nbsp;/&nbsp; going international</p>
+
+    <h1 class="headline">Every business<br>deserves to be seen.</h1>
+
+    <p class="subhead">
+      We're bringing The Webster's web design &amp; digital services across the Atlantic
+      (and beyond). <strong>thewebster.net</strong> is almost ready for takeoff.
+    </p>
+
+    <ul class="markets">
+      <li>United States</li>
+      <li>United Kingdom</li>
+      <li>Canada</li>
+      <li>Australia</li>
+      <li>New Zealand</li>
+    </ul>
+
+    <a class="cta" href="mailto:hello@thewebster.net">Get in touch early &nbsp;→</a>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year"></span> The Webster</span>
+    <span class="dot">·</span>
+    <span>Web Design &amp; Digital Services</span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

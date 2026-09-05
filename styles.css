@@ -1,0 +1,186 @@
+:root {
+  --ink: #0a0d16;
+  --surface: #12172a;
+  --blue: #2e6ff2;
+  --violet: #8b2ff0;
+  --orange: #ff7a2e;
+  --text: #f5f6fa;
+  --muted: #8a93b3;
+  --gradient: linear-gradient(100deg, var(--blue) 0%, var(--violet) 55%, var(--orange) 100%);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  padding: 6rem 1.5rem 5rem;
+}
+
+/* signature element: a slow orbit ring echoing the swoosh around the globe in the mark */
+.orbit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(70vh, 640px);
+  height: min(70vh, 640px);
+  transform: translate(-50%, -55%);
+  border-radius: 50%;
+  background:
+    conic-gradient(from 0deg, transparent 0deg, var(--blue) 40deg, var(--violet) 130deg, var(--orange) 220deg, transparent 300deg);
+  filter: blur(60px);
+  opacity: 0.22;
+  animation: spin 22s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes spin {
+  to { transform: translate(-50%, -55%) rotate(360deg); }
+}
+
+.stage {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mark {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 1.75rem;
+  filter: drop-shadow(0 8px 40px rgba(139, 47, 240, 0.35));
+}
+
+.mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.headline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subhead {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 2.25rem;
+  max-width: 480px;
+}
+
+.subhead strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.markets {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 0;
+  padding: 0;
+  margin: 0 0 2.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.markets li { padding: 0 0.85rem; position: relative; }
+
+.markets li + li::before {
+  content: '·';
+  position: absolute;
+  left: -0.1rem;
+  color: var(--violet);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--gradient);
+  padding: 0.875rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 30px rgba(139, 47, 240, 0.25);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(139, 47, 240, 0.4);
+}
+
+.cta:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.foot {
+  position: relative;
+  z-index: 1;
+  margin-top: 3.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.foot .dot { color: var(--violet); }
+
+@media (max-width: 480px) {
+  body { padding: 5rem 1.25rem 4rem; }
+  .mark { width: 104px; height: 104px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit { animation: none; }
+  .cta { transition: none; }
+}
