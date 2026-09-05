@@ -1,18 +1,26 @@
 # The Webster — thewebster.net
 
-Coming-soon landing page for **The Webster**'s international launch (US, UK, Canada, Australia, New Zealand).
+Full marketing site for **The Webster**'s international launch (US, UK, Canada, Australia, New Zealand).
 
-Static HTML/CSS, no build step, no dependencies.
+Static HTML/CSS/JS, no build step, no dependencies.
 
-## Files
+## Pages
 
-- `index.html` — the page
-- `styles.css` — styles
-- `assets/logo.webp` — brand mark
+- `index.html` — Home
+- `services.html` — Services
+- `portfolio.html` — Portfolio (real case studies)
+- `process.html` — Process
+- `about.html` — About
+- `blog/` — Blog (index + posts)
+- `contact.html` + `contact-handler.php` — Contact form (PHP `mail()`, sends to `info@thewebster.net`)
+
+## Shared files
+
+- `styles.css` — all page styles
+- `script.js` — nav toggle, scroll reveal, contact form success message
+- `assets/` — logo + portfolio screenshots
 
 ## Local preview
-
-Open `index.html` directly in a browser, or serve it:
 
 ```bash
 python -m http.server 8080

@@ -4,6 +4,15 @@ deployment:
     - export REPO=/home/thewebster/repositories/TheWebster
     - export DOCROOT=/home/thewebster/public_html
     - cp -R $REPO/index.html $DOCROOT/index.html
+    - cp -R $REPO/services.html $DOCROOT/services.html
+    - cp -R $REPO/portfolio.html $DOCROOT/portfolio.html
+    - cp -R $REPO/process.html $DOCROOT/process.html
+    - cp -R $REPO/about.html $DOCROOT/about.html
+    - cp -R $REPO/contact.html $DOCROOT/contact.html
+    - cp -R $REPO/contact-handler.php $DOCROOT/contact-handler.php
     - cp -R $REPO/styles.css $DOCROOT/styles.css
+    - cp -R $REPO/script.js $DOCROOT/script.js
     - mkdir -p $DOCROOT/assets
     - cp -R $REPO/assets/. $DOCROOT/assets/
+    - mkdir -p $DOCROOT/blog
+    - cp -R $REPO/blog/. $DOCROOT/blog/
