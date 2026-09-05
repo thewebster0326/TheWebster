@@ -448,4 +448,8 @@ a:focus-visible {
     transform: none;
     transition: none;
   }
+
+  .main-nav a, .btn, .card {
+    transition: none;
+  }
 }
