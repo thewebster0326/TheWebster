@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | The Webster</title>
+<meta name="description" content="The Webster is a web design and SEO agency helping businesses across the US, UK, Canada, Australia and New Zealand establish a strong online presence.">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">HOME</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="process.html">PROCESS</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="blog/index.html">BLOG</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--inner">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">About The Webster</p>
+    <h1 class="headline" style="font-size: clamp(2rem, 5vw, 3rem);">Every Business Deserves To Be Seen</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width: 720px;">
+    <p class="reveal" style="color:var(--text); line-height:1.8; font-size:1.0625rem;">
+      The Webster is a web design and SEO agency dedicated to helping businesses establish a
+      strong online presence. We create modern, high-performing websites and effective digital
+      strategies that attract customers and drive growth. Combining creativity with technical
+      expertise, we deliver solutions designed to build trust, strengthen brands, and help
+      businesses succeed in an increasingly competitive digital world.
+    </p>
+    <p class="reveal" style="color:var(--muted); line-height:1.8; font-size:1.0625rem; margin-top:1.5rem;">
+      Built on years of work with businesses across South Africa, The Webster is now bringing
+      that same approach to clients in the United States, United Kingdom, Canada, Australia, and
+      New Zealand — because a great website shouldn't be limited by geography, and every
+      business, wherever it operates, deserves to be seen.
+    </p>
+  </div>
+</section>
+
+<section class="section section-alt" style="text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Let's talk about your business</h2>
+    <a class="btn btn-primary reveal" href="contact.html">Get a Quote &nbsp;→</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="index.html" class="logo footer-logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
