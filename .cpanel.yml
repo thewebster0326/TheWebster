@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export REPO=/home/<CPANEL_USER>/repositories/TheWebster
-    - export DOCROOT=/home/<CPANEL_USER>/public_html
+    - export REPO=/home/thewebster/repositories/TheWebster
+    - export DOCROOT=/home/thewebster/public_html
     - cp -R $REPO/index.html $DOCROOT/index.html
     - cp -R $REPO/styles.css $DOCROOT/styles.css
     - mkdir -p $DOCROOT/assets
