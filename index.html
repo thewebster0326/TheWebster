@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Webster — Coming Soon</title>
-<meta name="description" content="The Webster is bringing web design & digital services to the US, UK, Canada, Australia and New Zealand. thewebster.net launches soon.">
+<title>The Webster | Web Design & Digital Services</title>
+<meta name="description" content="The Webster builds custom websites, e-commerce, SEO and branding for businesses across the US, UK, Canada, Australia and New Zealand. Every business deserves to be seen.">
 <link rel="icon" type="image/webp" href="assets/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +13,34 @@
 </head>
 <body>
 
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="process.html">PROCESS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="blog/index.html">BLOG</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
   <div class="orbit" aria-hidden="true"></div>
-
-  <main class="stage">
-    <div class="mark">
-      <img src="assets/logo.webp" alt="The Webster — Web Design & Digital Services" width="180" height="180">
-    </div>
-
+  <div class="hero-content">
     <p class="eyebrow">The Webster &nbsp;/&nbsp; going international</p>
-
     <h1 class="headline">Every business<br>deserves to be seen.</h1>
-
     <p class="subhead">
-      We're bringing The Webster's web design &amp; digital services across the Atlantic
-      (and beyond). <strong>thewebster.net</strong> is almost ready for takeoff.
+      Custom web design, e-commerce, SEO and branding for businesses across the
+      <strong>United States, United Kingdom, Canada, Australia and New Zealand</strong>.
     </p>
-
     <ul class="markets">
       <li>United States</li>
       <li>United Kingdom</li>
@@ -36,18 +48,101 @@
       <li>Australia</li>
       <li>New Zealand</li>
     </ul>
+    <a class="btn btn-primary" href="contact.html">Get a Quote &nbsp;→</a>
+  </div>
+</section>
 
-    <a class="cta" href="mailto:hello@thewebster.net">Get in touch early &nbsp;→</a>
-  </main>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title reveal">What We Do</h2>
+    <div class="card-grid">
+      <a href="services.html#web-design" class="card reveal" style="text-decoration:none;">
+        <h3>Web Design &amp; Development</h3>
+        <p>Custom-built websites designed around your business, not a template.</p>
+      </a>
+      <a href="services.html#ecommerce" class="card reveal" style="text-decoration:none;">
+        <h3>E-commerce</h3>
+        <p>Online stores built to convert, from product pages to checkout.</p>
+      </a>
+      <a href="services.html#seo" class="card reveal" style="text-decoration:none;">
+        <h3>SEO &amp; Digital Marketing</h3>
+        <p>Built to be found, not just built to look good.</p>
+      </a>
+      <a href="services.html#branding" class="card reveal" style="text-decoration:none;">
+        <h3>Branding &amp; Logo Design</h3>
+        <p>A visual identity that matches the quality of your work.</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-  <footer class="foot">
-    <span>© <span id="year"></span> The Webster</span>
-    <span class="dot">·</span>
-    <span>Web Design &amp; Digital Services</span>
-  </footer>
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Recent Work</h2>
+    <div class="card-grid">
+      <a href="portfolio.html" class="card reveal" style="text-decoration:none;">
+        <img src="assets/portfolio/optique-borehole-drilling.png" alt="Optique Borehole Drilling website" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h3>Optique Borehole Drilling</h3>
+        <p>Precision water solutions across Gauteng, South Africa.</p>
+      </a>
+      <a href="portfolio.html" class="card reveal" style="text-decoration:none;">
+        <img src="assets/portfolio/reliable-runner-courier.png" alt="Reliable Runner Courier website" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h3>Reliable Runner Courier</h3>
+        <p>Local delivery service serving Cape Town.</p>
+      </a>
+      <a href="portfolio.html" class="card reveal" style="text-decoration:none;">
+        <img src="assets/portfolio/vuka-digital.png" alt="Vuka Digital website" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+        <h3>Vuka Digital</h3>
+        <p>The agency's own animated, Next.js-built marketing site.</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<section class="section" style="text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Ready to be seen?</h2>
+    <a class="btn btn-primary reveal" href="contact.html">Get a Quote &nbsp;→</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="index.html" class="logo footer-logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
