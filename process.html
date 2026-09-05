@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Process | The Webster</title>
+<meta name="description" content="How The Webster builds a website: Discovery, Design, Development, Launch & Growth.">
+<link rel="icon" type="image/webp" href="assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .process-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .process-step .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    flex-shrink: 0;
+    width: 3rem;
+  }
+  .process-step h3 { margin: 0 0 0.5rem; font-family: 'Space Grotesk', sans-serif; }
+  .process-step p { margin: 0; color: var(--muted); line-height: 1.7; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">HOME</a>
+      <a href="services.html">SERVICES</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="process.html" class="active">PROCESS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="blog/index.html">BLOG</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--inner">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Our Process</p>
+    <h1 class="headline" style="font-size: clamp(2rem, 5vw, 3rem);">How We Get You Live</h1>
+    <p class="subhead">Four steps, start to finish.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <span class="num">01</span>
+        <div>
+          <h3>Discovery</h3>
+          <p>We start by understanding your business: who you serve, what makes you different, and what the website actually needs to achieve — leads, sales, bookings, or credibility.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">02</span>
+        <div>
+          <h3>Design</h3>
+          <p>A custom visual direction built around your brand, not a theme. Layout, typography, and color choices are made specifically for your business and your customers.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">03</span>
+        <div>
+          <h3>Development</h3>
+          <p>We build it properly: clean code, tested across devices and browsers, with any functionality you need — bookings, e-commerce, integrations — built in from the start.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">04</span>
+        <div>
+          <h3>Launch &amp; Growth</h3>
+          <p>Once it's live, the work continues: SEO, updates, and ongoing support to make sure the site keeps working for you long after launch.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" style="text-align:center;">
+  <div class="container">
+    <h2 class="section-title reveal">Ready to start?</h2>
+    <a class="btn btn-primary reveal" href="contact.html">Get a Quote &nbsp;→</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="index.html" class="logo footer-logo"><img src="assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
