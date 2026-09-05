@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OG Image Source</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    background: #0a0d16;
+    overflow: hidden;
+  }
+  .stage {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg, #2e6ff2 40deg, #8b2ff0 130deg, #ff7a2e 220deg, transparent 300deg);
+    filter: blur(120px);
+    opacity: 0.28;
+  }
+  .logo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 28px;
+    filter: drop-shadow(0 8px 40px rgba(139, 47, 240, 0.35));
+  }
+  .eyebrow {
+    position: relative;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a93b3;
+    margin-bottom: 20px;
+  }
+  .wordmark {
+    position: relative;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    background: linear-gradient(100deg, #2e6ff2 0%, #8b2ff0 55%, #ff7a2e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+  }
+  .tagline {
+    position: relative;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 28px;
+    color: #f5f6fa;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="glow"></div>
+    <img class="logo" src="assets/logo.webp" alt="">
+    <p class="eyebrow">Web Design &amp; Digital Services</p>
+    <h1 class="wordmark">The Webster</h1>
+    <p class="tagline">Every Business Deserves To Be Seen</p>
+  </div>
+</body>
+</html>
