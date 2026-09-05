@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Signs Your Website Needs a Redesign | The Webster</title>
+<meta name="description" content="How to tell your website is holding your business back, and what to do about it.">
+<link rel="icon" type="image/webp" href="../assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .post-body { max-width: 680px; margin: 0 auto; color: var(--text); line-height: 1.8; }
+  .post-body h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; }
+  .post-body p { color: var(--muted); }
+  .post-body ul { color: var(--muted); line-height: 1.9; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">HOME</a>
+      <a href="../services.html">SERVICES</a>
+      <a href="../portfolio.html">PORTFOLIO</a>
+      <a href="../process.html">PROCESS</a>
+      <a href="../about.html">ABOUT</a>
+      <a href="index.html" class="active">BLOG</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+    <a href="../contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--inner">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Blog</p>
+    <h1 class="headline" style="font-size: clamp(1.75rem, 4.5vw, 2.75rem);">5 Signs Your Website Needs a Redesign</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="post-body reveal">
+      <p>
+        A website doesn't announce when it's gone stale — it just quietly stops working as hard for
+        your business. Here are five signs it's time for a redesign.
+      </p>
+      <h2>1. It's not mobile-friendly</h2>
+      <p>
+        If visitors have to pinch and zoom to read your site on a phone, you're losing them before
+        they see what you offer — and Google ranks mobile-unfriendly sites lower to begin with.
+      </p>
+      <h2>2. It looks outdated next to your competitors</h2>
+      <p>
+        Design trends move. A site that looked current five years ago can quietly make a business
+        look behind the times, even if the business itself isn't.
+      </p>
+      <h2>3. It's slow to load</h2>
+      <p>
+        Slow sites lose visitors and rankings both. If your homepage takes more than a couple of
+        seconds to become usable, that's costing you.
+      </p>
+      <h2>4. It's hard to update or maintain</h2>
+      <p>
+        If changing a price, adding a page, or updating a photo requires calling a developer every
+        time, the site is working against you instead of for you.
+      </p>
+      <h2>5. It's not generating enquiries</h2>
+      <p>
+        Ultimately, a website's job is to do something — generate leads, sales, bookings, or
+        credibility. If it isn't, that's the clearest sign of all that something needs to change.
+      </p>
+      <p style="margin-top:2rem;"><a href="../contact.html" class="btn btn-primary">Get a Quote &nbsp;→</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="../index.html" class="logo footer-logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../process.html">Process</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

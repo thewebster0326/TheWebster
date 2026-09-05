@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | The Webster</title>
+<meta name="description" content="Insights on web design, SEO and building a website that works — from The Webster.">
+<link rel="icon" type="image/webp" href="../assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">HOME</a>
+      <a href="../services.html">SERVICES</a>
+      <a href="../portfolio.html">PORTFOLIO</a>
+      <a href="../process.html">PROCESS</a>
+      <a href="../about.html">ABOUT</a>
+      <a href="index.html" class="active">BLOG</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+    <a href="../contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--inner">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Blog</p>
+    <h1 class="headline" style="font-size: clamp(2rem, 5vw, 3rem);">Insights</h1>
+    <p class="subhead">Thoughts on web design, SEO, and building a site that actually works.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card-grid">
+      <a href="website-speed-and-seo.html" class="card reveal" style="text-decoration:none;">
+        <h3>How Website Speed Affects Your SEO Ranking</h3>
+        <p>Why page speed is a ranking signal, not just a nice-to-have — and what actually slows sites down.</p>
+      </a>
+      <a href="signs-you-need-a-redesign.html" class="card reveal" style="text-decoration:none;">
+        <h3>5 Signs Your Website Needs a Redesign</h3>
+        <p>From mobile-friendliness to lead generation — how to tell your site is holding you back.</p>
+      </a>
+      <a href="2026-web-design-trends.html" class="card reveal" style="text-decoration:none;">
+        <h3>Web Design Trends for 2026</h3>
+        <p>Typography, motion, accessibility, and performance — what's actually changing this year.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="../index.html" class="logo footer-logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../process.html">Process</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

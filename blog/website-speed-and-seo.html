@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Website Speed Affects Your SEO Ranking | The Webster</title>
+<meta name="description" content="Why page load speed is a Google ranking signal, and practical ways to make your site faster.">
+<link rel="icon" type="image/webp" href="../assets/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  .post-body { max-width: 680px; margin: 0 auto; color: var(--text); line-height: 1.8; }
+  .post-body h2 { font-family: 'Space Grotesk', sans-serif; margin-top: 2.5rem; }
+  .post-body p { color: var(--muted); }
+  .post-body ul { color: var(--muted); line-height: 1.9; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="../index.html">HOME</a>
+      <a href="../services.html">SERVICES</a>
+      <a href="../portfolio.html">PORTFOLIO</a>
+      <a href="../process.html">PROCESS</a>
+      <a href="../about.html">ABOUT</a>
+      <a href="index.html" class="active">BLOG</a>
+      <a href="../contact.html">CONTACT</a>
+    </nav>
+    <a href="../contact.html" class="btn btn-primary header-cta">GET A QUOTE</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero hero--inner">
+  <div class="orbit" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Blog</p>
+    <h1 class="headline" style="font-size: clamp(1.75rem, 4.5vw, 2.75rem);">How Website Speed Affects Your SEO Ranking</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="post-body reveal">
+      <p>
+        Google has confirmed that page experience — including how quickly a page loads — is part
+        of its ranking algorithm. A slow site doesn't just frustrate visitors; it can actively
+        hold your rankings back, especially now that Google indexes and ranks primarily based on
+        the mobile version of your site, where connections are often slower and less reliable
+        than desktop.
+      </p>
+      <h2>Why speed matters beyond rankings</h2>
+      <p>
+        Speed affects more than search visibility. Visitors decide almost instantly whether to
+        stay on a page or leave, and a slow load is one of the fastest ways to lose someone before
+        they've even seen what you offer. A faster site keeps more of the visitors your SEO work
+        already earned.
+      </p>
+      <h2>What actually slows a site down</h2>
+      <ul>
+        <li>Unoptimized images — full-resolution photos loaded at thumbnail size</li>
+        <li>Render-blocking scripts and stylesheets that delay the page from displaying</li>
+        <li>Bloated page-builder plugins that load far more code than a page needs</li>
+        <li>Poor hosting that struggles under real traffic</li>
+      </ul>
+      <h2>What we do about it</h2>
+      <p>
+        Every site we build is checked against this from day one — compressed images, minimal
+        render-blocking resources, and clean, purpose-built code instead of a page-builder's
+        default bloat. Speed isn't an afterthought added at the end of a project; it's a
+        constraint we design within from the start.
+      </p>
+      <p style="margin-top:2rem;"><a href="../contact.html" class="btn btn-primary">Get a Quote &nbsp;→</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <a href="../index.html" class="logo footer-logo"><img src="../assets/logo.webp" alt="The Webster" class="logo-img"></a>
+      <p class="footer-tagline">Every Business Deserves To Be Seen</p>
+    </div>
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../process.html">Process</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:info@thewebster.net">info@thewebster.net</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>SERVING</h4>
+      <p class="footer-area">United States &bull; United Kingdom &bull; Canada &bull; Australia &bull; New Zealand</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Webster. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
