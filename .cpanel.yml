@@ -12,6 +12,8 @@ deployment:
     - cp -R $REPO/contact-handler.php $DOCROOT/contact-handler.php
     - cp -R $REPO/styles.css $DOCROOT/styles.css
     - cp -R $REPO/script.js $DOCROOT/script.js
+    - cp -R $REPO/sitemap.xml $DOCROOT/sitemap.xml
+    - cp -R $REPO/robots.txt $DOCROOT/robots.txt
     - mkdir -p $DOCROOT/assets
     - cp -R $REPO/assets/. $DOCROOT/assets/
     - mkdir -p $DOCROOT/blog
