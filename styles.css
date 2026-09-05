@@ -170,11 +170,6 @@ a:focus-visible {
 
 .foot .dot { color: var(--violet); }
 
-@media (max-width: 480px) {
-  body { padding: 5rem 1.25rem 4rem; }
-  .mark { width: 104px; height: 104px; }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .orbit { animation: none; }
   .cta { transition: none; }
