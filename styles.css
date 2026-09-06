@@ -521,7 +521,7 @@ a:focus-visible {
 
 /* ============ network map (Home hero signature element) ============ */
 .network-map {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: min(70vh, 640px);
