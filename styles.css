@@ -518,3 +518,60 @@ a:focus-visible {
 }
 
 .form-error.visible { display: block; }
+
+/* ============ network map (Home hero signature element) ============ */
+.network-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: min(70vh, 640px);
+  height: min(70vh, 640px);
+  transform: translate(-50%, -55%);
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.network-map .net-path {
+  fill: none;
+  stroke: url(#netGradient);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0.5;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw-path 1.6s ease-out forwards;
+}
+
+.network-map .net-node circle {
+  fill: url(#netGradient);
+  animation: node-pulse 2.4s ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.network-map .net-node text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  fill: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+@keyframes draw-path {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes node-pulse {
+  0%, 100% { opacity: 0.6; r: 5; }
+  50% { opacity: 1; r: 7; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .network-map .net-path {
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+  .network-map .net-node circle {
+    animation: none;
+    opacity: 1;
+  }
+}

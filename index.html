@@ -54,7 +54,27 @@
 </header>
 
 <section class="hero">
-  <div class="orbit" aria-hidden="true"></div>
+  <div class="network-map" aria-hidden="true">
+    <svg viewBox="0 0 600 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="netGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#2e6ff2"/>
+          <stop offset="55%" stop-color="#8b2ff0"/>
+          <stop offset="100%" stop-color="#ff7a2e"/>
+        </linearGradient>
+      </defs>
+      <path class="net-path" d="M 300 40 Q 300 300 300 300"/>
+      <path class="net-path" d="M 460 40 Q 400 200 300 300"/>
+      <path class="net-path" d="M 460 480 Q 380 390 300 300"/>
+      <path class="net-path" d="M 140 480 Q 220 390 300 300"/>
+      <path class="net-path" d="M 140 40 Q 200 200 300 300"/>
+      <g class="net-node" style="--delay:0s"><circle cx="300" cy="40" r="6"/><text x="300" y="18" text-anchor="middle">US</text></g>
+      <g class="net-node" style="--delay:0.3s"><circle cx="460" cy="40" r="6"/><text x="478" y="18">UK</text></g>
+      <g class="net-node" style="--delay:0.6s"><circle cx="460" cy="480" r="6"/><text x="472" y="500">CA</text></g>
+      <g class="net-node" style="--delay:0.9s"><circle cx="140" cy="480" r="6"/><text x="128" y="500" text-anchor="end">AU</text></g>
+      <g class="net-node" style="--delay:1.2s"><circle cx="140" cy="40" r="6"/><text x="122" y="18" text-anchor="end">NZ</text></g>
+    </svg>
+  </div>
   <div class="hero-content">
     <p class="eyebrow">The Webster &nbsp;/&nbsp; going international</p>
     <h1 class="headline">Every business<br>deserves to be seen.</h1>
