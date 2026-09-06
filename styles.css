@@ -693,3 +693,16 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .frame-tags { transition: none; }
 }
+
+/* ============ about page pull-quote ============ */
+.pull-quote {
+  position: relative;
+  margin: 0 0 2rem;
+  padding-left: 1.75rem;
+  border-left: 3px solid transparent;
+  border-image: var(--gradient) 1;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.6;
+  color: var(--text);
+}
