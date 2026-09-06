@@ -21,7 +21,7 @@ Open `.cpanel.yml` in this project and replace `<CPANEL_USER>` with your actual 
 Back in cPanel's **Git™ Version Control**, open this repository and use the **Pull or Deploy** tab:
 
 1. **Update from Remote** — pulls the latest commit from GitHub.
-2. **Deploy HEAD Commit** — runs the tasks in `.cpanel.yml`, which copy `index.html`, `styles.css`, and `assets/` into the site's document root.
+2. **Deploy HEAD Commit** — runs the tasks in `.cpanel.yml`, which copy every page (including `privacy.html`, `terms.html`, `404.html`), `contact-handler.php`, `.htaccess`, `styles.css`, `script.js`, `sitemap.xml`, `robots.txt`, `assets/`, and `blog/` into the site's document root.
 
 Repeat step 3 after every push (or set up cPanel's webhook/API deploy trigger later for a fully automatic push-to-deploy pipeline — ask if you want that wired up).
 
