@@ -587,11 +587,26 @@ a:focus-visible {
    subhead and markets list. */
 @media (max-width: 480px) {
   .network-map {
-    top: 8px;
+    top: 4px;
     left: 50%;
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     transform: translateX(-50%);
+  }
+
+  .network-map .net-path {
+    stroke-width: 16;
+  }
+
+  /* !important is required here: the node-pulse keyframe animation (see
+     above) animates the `r` property between 5 and 7 on every circle, and a
+     running CSS animation overrides plain (non-!important) declarations for
+     any property it animates for its entire duration -- a same-specificity
+     override without !important is silently inert. !important is the one
+     thing that wins over an animation per the cascade, so it's needed to
+     actually enlarge the node dots at this size. */
+  .network-map .net-node circle {
+    r: 24 !important;
   }
 
   .network-map .net-node text {
