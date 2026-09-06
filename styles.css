@@ -522,11 +522,10 @@ a:focus-visible {
 /* ============ network map (Home hero signature element) ============ */
 .network-map {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: min(70vh, 640px);
-  height: min(70vh, 640px);
-  transform: translate(-50%, -55%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.9;
   pointer-events: none;
   z-index: 0;
@@ -573,5 +572,29 @@ a:focus-visible {
   .network-map .net-node circle {
     animation: none;
     opacity: 1;
+  }
+}
+
+/* Below ~480px the hero's own box flips from landscape to portrait (text
+   wraps enough that hero height exceeds hero width), so the height:100%/
+   width:100% square above ends up vertically centered mid-hero and its
+   node ring lands on top of the headline/subhead text. Rather than chase
+   exact text-line coordinates on every narrow phone size, shrink the whole
+   map into a small badge that lives entirely inside the fixed 80px
+   padding-top gap above the eyebrow (always blank, always text-free) --
+   safe by construction regardless of exact width. Labels are dropped at
+   this size since the same 5 country names are already spelled out in the
+   subhead and markets list. */
+@media (max-width: 480px) {
+  .network-map {
+    top: 8px;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    transform: translateX(-50%);
+  }
+
+  .network-map .net-node text {
+    display: none;
   }
 }
