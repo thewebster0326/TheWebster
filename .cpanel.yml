@@ -13,7 +13,7 @@ deployment:
     - cp -R $REPO/privacy.html $DOCROOT/privacy.html
     - cp -R $REPO/terms.html $DOCROOT/terms.html
     - cp -R $REPO/404.html $DOCROOT/404.html
-    - cp -R $REPO/.htaccess $DOCROOT/.htaccess
+    - grep -qF 'ErrorDocument 404 /404.html' $DOCROOT/.htaccess 2>/dev/null || echo 'ErrorDocument 404 /404.html' >> $DOCROOT/.htaccess
     - cp -R $REPO/styles.css $DOCROOT/styles.css
     - cp -R $REPO/script.js $DOCROOT/script.js
     - cp -R $REPO/sitemap.xml $DOCROOT/sitemap.xml
