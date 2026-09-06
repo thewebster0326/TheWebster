@@ -506,3 +506,15 @@ a:focus-visible {
 }
 
 .form-success.visible { display: block; }
+
+.form-error {
+  display: none;
+  background: rgba(255, 122, 46, 0.12);
+  border: 1px solid rgba(255, 122, 46, 0.4);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.form-error.visible { display: block; }

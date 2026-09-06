@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const note = document.querySelector('.form-success');
     if (note) note.classList.add('visible');
   }
+  if (params.get('error') === '1') {
+    const note = document.querySelector('.form-error');
+    if (note) note.classList.add('visible');
+  }
 
   const revealTargets = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealTargets.length) {
